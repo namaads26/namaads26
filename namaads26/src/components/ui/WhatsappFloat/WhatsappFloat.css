@@ -1,0 +1,114 @@
+.wsp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wsp-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #25D366;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.30);
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.wsp-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.wsp-float:hover .wsp-btn {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+  filter: brightness(1.02);
+}
+
+.wsp-float:active .wsp-btn {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Pulse suave */
+.wsp-btn::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 999px;
+  border: 2px solid rgba(37, 211, 102, 0.55);
+  transform: scale(0.85);
+  opacity: 0;
+  animation: wspPulse 2.2s infinite;
+}
+
+@keyframes wspPulse {
+  0% { transform: scale(0.85); opacity: 0; }
+  35% { opacity: 0.9; }
+  70% { transform: scale(1.15); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Tooltip */
+.wsp-tooltip {
+  position: absolute;
+  right: 72px;
+  bottom: 50%;
+  transform: translateY(50%);
+  background: rgba(15, 15, 15, 0.92);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.wsp-tooltip::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 6px solid rgba(15, 15, 15, 0.92);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.wsp-float:hover .wsp-tooltip {
+  opacity: 1;
+  transform: translateY(50%) translateX(-2px);
+}
+
+/* Mobile: más chico y sin tooltip (no molesta) */
+@media (max-width: 480px) {
+  .wsp-float {
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .wsp-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .wsp-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .wsp-tooltip {
+    display: none;
+  }
+}

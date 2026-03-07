@@ -1,0 +1,209 @@
+.proceso {
+  padding: 90px 20px;
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(255,255,255,0.08), transparent 55%),
+              radial-gradient(900px 500px at 80% 30%, rgba(255,255,255,0.06), transparent 55%),
+              #0b0b0f;
+  color: #fff;
+}
+
+.proceso-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.proceso-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.proceso-kicker {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.04);
+}
+
+.proceso-title {
+  margin: 16px 0 12px;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.proceso-title span {
+  color: rgba(64, 186, 200, 0.9);
+  
+}
+
+.proceso-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.72);
+}
+
+/* GRID + TIMELINE */
+.proceso-grid {
+  position: relative;
+  display: grid;
+  gap: 18px;
+}
+
+.proceso-line {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.35), rgba(255,255,255,0.05));
+  border-radius: 999px;
+}
+
+/* CARD */
+.proceso-card {
+  position: relative;
+  padding: 18px 18px 18px 44px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.proceso-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,0.24);
+  background: rgba(255,255,255,0.07);
+}
+
+.proceso-dot {
+  position: absolute;
+  left: 8px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.12);
+}
+
+.proceso-cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.proceso-num {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+}
+
+.proceso-tag {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.16);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  white-space: nowrap;
+}
+
+.proceso-cardTitle {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.proceso-cardDesc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.72);
+}
+
+.proceso-cardGlow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(200px 140px at 20% 20%, rgba(255,255,255,0.10), transparent 55%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.proceso-card:hover .proceso-cardGlow {
+  opacity: 1;
+}
+
+/* HIGHLIGHT: "Diseño Web" protagonista */
+.proceso-card.is-highlight {
+  border-color: rgba(255,255,255,0.28);
+  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+}
+
+.proceso-card.is-highlight .proceso-dot {
+  background: #ffffff;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.16), 0 0 22px rgba(255,255,255,0.20);
+}
+
+.proceso-card.is-highlight .proceso-cardTitle {
+  font-size: 19px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .proceso {
+    padding: 110px 28px;
+  }
+
+  .proceso-title {
+    font-size: 38px;
+  }
+
+  .proceso-subtitle {
+    font-size: 16px;
+  }
+
+  .proceso-grid {
+    gap: 20px;
+  }
+}
+
+/* DESKTOP: timeline horizontal */
+@media (min-width: 1024px) {
+  .proceso-header {
+    margin-bottom: 70px;
+  }
+
+  .proceso-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .proceso-line {
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: auto;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255,255,255,0.35), rgba(255,255,255,0.05));
+  }
+
+  .proceso-card {
+    padding: 46px 18px 18px 18px;
+  }
+
+  .proceso-dot {
+    left: 18px;
+    top: 14px;
+  }
+}

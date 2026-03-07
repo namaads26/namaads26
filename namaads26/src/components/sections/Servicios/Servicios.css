@@ -1,0 +1,232 @@
+.servicios {
+  padding: 72px 0;
+  background: #36afdb;
+  color: #ffffff;
+}
+
+.servicios__container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.servicios__header {
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.servicios__eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin: 0 0 10px 0;
+}
+
+.servicios__title {
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 0 0 10px 0;
+}
+
+.servicios__subtitle {
+  margin: 0;
+  opacity: 0.82;
+  max-width: 56ch;
+}
+
+.servicios__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.servicios__card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.servicios__card.is-highlight {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.servicios__badgeRow {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.servicios__badge {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  opacity: 0.95;
+}
+
+.servicios__badge.is-badgeHighlight {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.servicios__cardTitle {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.servicios__cardNote {
+  margin: 0 0 14px 0;
+  opacity: 0.82;
+  font-size: 14px;
+}
+
+.servicios__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+  display: grid;
+  gap: 10px;
+}
+
+.servicios__item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.servicios__check {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.servicios__text {
+  opacity: 0.92;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.servicios__actions {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.servicios__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 160ms ease, opacity 160ms ease;
+  user-select: none;
+}
+
+.servicios__button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.servicios__button.is-primary {
+  background: #ffffff;
+  color: #0b0b0f;
+}
+
+.servicios__button.is-secondary {
+  background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.servicios__microcopy {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  opacity: 0.72;
+  text-align: center;
+}
+
+.servicios__footer {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  display: grid;
+  gap: 6px;
+}
+
+.servicios__footerText {
+  margin: 0;
+  opacity: 0.80;
+  font-size: 14px;
+}
+
+.servicios__footerLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  width: fit-content;
+  opacity: 0.92;
+}
+
+.servicios__footerLink:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .servicios {
+    padding: 90px 0;
+  }
+
+  .servicios__header {
+    margin-bottom: 34px;
+  }
+
+  .servicios__title {
+    font-size: 36px;
+  }
+
+  .servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .servicios__card {
+    padding: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .servicios__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .servicios__cardTitle {
+    font-size: 22px;
+  }
+}
