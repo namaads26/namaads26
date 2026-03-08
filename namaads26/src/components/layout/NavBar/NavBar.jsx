@@ -28,7 +28,7 @@ const NavBar = () => {
           <a href="#beneficios" onClick={closeMenu}>Beneficios</a>
           <a href="#testimonios" onClick={closeMenu}>Testimonios</a>
           <a
-            href="https://wa.me/5493510000000"
+            href="https://wa.554899633695800"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-link"
