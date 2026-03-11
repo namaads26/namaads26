@@ -1,13 +1,15 @@
 import "./Footer.css";
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+import logo_footer from "../../../assets/images/logo_footer.png"
 
 const Footer = () => {
+
   return (
     <footer className="footer">
       <div className="footer-container">
 
         <div className="footer-brand">
-          <h2 className="footer-logo">nama.ads</h2>
+          <h2 className="footer-logo"><img src= {logo_footer} alt="" /></h2>
           <p>
             Creamos páginas web estratégicas que convierten visitas en clientes.
             Diseño, desarrollo y rendimiento en un solo lugar.
@@ -17,28 +19,19 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Navegación</h3>
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="/">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#proceso">Proceso</a></li>
             <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+          
           </ul>
         </div>
 
-        <div className="footer-services">
-          <h3>Servicios</h3>
-          <ul>
-            <li>Diseño Web</li>
-            <li>Landing Pages</li>
-            <li>Optimización SEO</li>
-            <li>Desarrollo React</li>
-          </ul>
-        </div>
 
         <div className="footer-contact">
           <h3>Contacto</h3>
           <a
-            href="https://wa.me/5548996336958"
+            href="https://wa.me/543516104592"
             target="_blank"
             rel="noreferrer"
             className="footer-whatsapp"
@@ -47,8 +40,8 @@ const Footer = () => {
           </a>
 
           <div className="footer-social">
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedin /></a>
+            <a href="https://www.instagram.com/nama.adss?igsh=ZnV1bndoeGN2N3dz&utm_source=qr"><FaInstagram /></a>
+            <a href="https://wa.me/543516104592"><FaWhatsapp /></a>
           </div>
         </div>
 
