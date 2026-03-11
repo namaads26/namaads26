@@ -3,7 +3,7 @@ import whatsappIcon from "../../../assets/icons/WhatsApp.png";
 
 
 export default function WhatsappFloat() {
-  const phone = "5548996336958"; 
+  const phone = "543516104592"; 
   const text = "Hola! Quiero info sobre diseño web y campañas para mi negocio 👋";
   const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 

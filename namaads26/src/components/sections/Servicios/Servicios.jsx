@@ -53,7 +53,7 @@ const PACKAGES = [
 ];
 
 export default function Servicios() {
-  const whatsappNumber = "5493510000000"; // <-- cambia por el tuyo (formato internacional sin +)
+  const whatsappNumber = "5493516104592"; // <-- cambia por el tuyo (formato internacional sin +)
   const baseMessage =
     "Hola! Quiero info sobre los paquetes de Nama.ads. ¿Me asesorás?";
 

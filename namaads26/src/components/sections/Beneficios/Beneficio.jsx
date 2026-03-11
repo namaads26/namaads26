@@ -109,7 +109,7 @@ export default function Beneficios() {
             </p>
           </div>
 
-          <a className="beneficios__ctaBtn" href="#contacto">
+          <a className="beneficios__ctaBtn" href="https://wa.me/543516104592">
             Quiero mi propuesta
           </a>
         </div>

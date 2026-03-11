@@ -13,7 +13,7 @@ export default function CTA() {
         </p>
 
         <a
-          href="https://wa.me/5548996336958"
+          href="https://wa.me/543516104592"
           target="_blank"
           rel="noopener noreferrer"
           className="cta__button"
