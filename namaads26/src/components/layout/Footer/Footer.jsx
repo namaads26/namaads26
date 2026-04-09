@@ -40,7 +40,7 @@ const Footer = () => {
           </a>
 
           <div className="footer-social">
-            <a href="https://www.instagram.com/nama.adss?igsh=ZnV1bndoeGN2N3dz&utm_source=qr"><FaInstagram /></a>
+            <a href="https://www.instagram.com/namaads.agency?igsh=OHY3ajhpaTNiMmlq"><FaInstagram /></a>
             <a href="https://wa.me/543516104592"><FaWhatsapp /></a>
           </div>
         </div>
