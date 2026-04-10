@@ -5,6 +5,7 @@ import Servicios from './components/sections/Servicios/Servicios';
 import Proceso from './components/sections/Proceso/Proceso';
 import Beneficios from './components/sections/Beneficios/Beneficio';
 import Testimonios from './components/sections/Testimonios/Testimonios';
+import Portfolio from './components/sections/Portfolio/Portfolio';
 import WhatsappFloat from './components/ui/WhatsappFloat/WhatsappFloat';
 import Footer from './components/layout/Footer/Footer';
 
@@ -20,6 +21,7 @@ function App() {
         <Proceso/>
         <Beneficios/>
         <Testimonios/>
+        <Portfolio/>
       </main>
       <Footer/>
       <WhatsappFloat/>

@@ -27,6 +27,7 @@ const NavBar = () => {
           <a href="#proceso" onClick={closeMenu}>Proceso</a>
           <a href="#beneficios" onClick={closeMenu}>Beneficios</a>
           <a href="#testimonios" onClick={closeMenu}>Testimonios</a>
+          <a href="#portfolio" onClick={closeMenu}>Portfolio</a>
           <a
             href="https://wa.554899633695800"
             target="_blank"
