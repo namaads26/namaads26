@@ -48,7 +48,9 @@ export default function Hero() {
 
   return (
     <section className="hero" aria-label="Hero principal Nama Ads">
+
       <div className="hero__inner">
+
         <div className="hero__viewport">
           <div
             className="hero__track"
