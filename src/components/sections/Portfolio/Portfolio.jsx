@@ -17,10 +17,10 @@ const proyectos = [
   },
   {
     id: 3,
-    titulo: 'Proyecto 3',
-    categoria: 'Catálogo Web',
-    descripcion: 'Catálogo visual con foco en experiencia de usuario y presentación de productos.',
-    url: 'https://ejemplo3.com',
+    titulo: 'Napoli Vibes',
+    categoria: 'Catálogo con carrito de compras',
+    descripcion: 'Menu virtual diseñado para una pizzería, enfocada en maximizar pedidos. Combina un menú visual atractivo, carrito dinámico y envío directo del pedido por WhatsApp, creando un flujo simple, rápido y orientado a conversión.',
+    url: 'https://napoli-vibes.vercel.app/',
   },
 ];
 
